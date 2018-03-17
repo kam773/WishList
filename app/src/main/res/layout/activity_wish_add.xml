@@ -2,6 +2,10 @@
 <RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
     android:orientation="vertical"
     android:layout_height="match_parent">
 
@@ -20,7 +24,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/contentEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -28,35 +32,35 @@
         android:layout_below="@id/nameEditText"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="content"/>
+        android:hint="Content"/>
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/nameEditText"
-        android:layout_marginTop="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_below="@+id/buttonAddPhoto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"
+        android:scaleType="centerCrop"
         app:srcCompat="@mipmap/ic_launcher_round" />
 
     <Button
-
-        android:id="@+id/button"
+        android:id="@+id/buttonAddPhoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/fab"
+        android:onClick="onClickAddPhoto"
+        android:layout_below="@+id/contentEditText"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="147dp"
-        android:text="Button" />
-
-
+        android:layout_marginTop="37dp"
+        android:text="Select Picture" />
 
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onClickSave"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:src="@drawable/ic_save_white_24dp"

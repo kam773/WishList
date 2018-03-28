@@ -8,6 +8,7 @@ Personal project used for developing android skills.
 # Libraries:
 * EasyImage
 * Realm.io
+* Butterknife
 
 <img src="https://image.ibb.co/dGKhS7/Screenshot_2018_03_26_19_52_42_373_com_example_android_wishlist.png" data-canonical-
 src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="250" height="400" />
